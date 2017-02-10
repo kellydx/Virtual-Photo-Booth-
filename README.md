@@ -1,4 +1,4 @@
-# access-local-camera-with-HTML
+# Virtual Photo Booth / access-local-camera-with-HTML
 Access the local camera from an HTML5 Web page, using the new navigator.getUserMedia(), 
 and apply filters on image using CSS3 Filter Property
 
