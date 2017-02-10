@@ -13,9 +13,9 @@ and up to one audio input device (such as a microphone).
 (However, this feature will soon be removed from the Web standards. 
 Though some browsers may still support it, it is in the process of being dropped.
 I'll update this project with the new navigator.mediaDevices.getUserMedia soon)
-At this point, because of security issues, getUserMedia() should only work on https: protocol. You'll need a SSL certificate for this API to work.
+At this point, because of security issues, getUserMedia() should only work on https: protocol.
+You'll need a SSL certificate for this API to work.
 # Future Improvements
 Future improvements include a feature to save snapshot to the user’s local hard drive, and develop a mobile version with an efficient user interface to provide user with better interaction
-
 The early stage of this project only work on accessing video devices
 Working with audio features will be added later
