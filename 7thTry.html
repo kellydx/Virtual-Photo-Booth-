@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<title>Accessing Web Camera in JS</title>
-		<link rel="stylesheet" type="text/css" href="7thTry.css" />		
+		<link rel="stylesheet" type="text/css" href="newCSS.css" />		
 	</head>
 	
 	<body>
@@ -14,22 +14,14 @@
 		and apply filters on image using CSS3 Filter Property.
 		At this point, because of security issues, getUserMedia() should only work on 
 		https: protocol. You'll need a SSL certificate for this API to work.</p>
-		</div>		
-		<section class="boxHolder">
-		<article id="webcam">
-			<video width="450" height="400" class="vid" id="video" ></video>
-		</article>
-		<aside id="webcam">
-		<canvas width="450" height="400" id="canvas"class="snapShot"> </canvas>
-		</aside>		
-		</section>
+		</div>
 		
-		<div style="clear: both;"></div>
-		<p class="introduction">Take a snapshot before applying filters to compare the difference</p>
-		<p class="footer">XuanDuong kelly13493@gmail.com</p>
-		<section class="buttons">			
-			<div class="dropdown">				
-				<button id="effect" onclick="myFunction()" class="dropbtn">Add Effects</button>					
+		<div class= "canvases" >
+			<video width="448" height="340" id="video" ></video>		
+			<canvas width="450" height="400" id="canvas" > </canvas>
+		</div>					
+			<div class="dropdown">			
+				<button onclick="myFunction()" class="dropbtn">Add Effects</button>				
 					<div id="myDropdown" class="dropdown-content">
 						<a href="#" onclick="none()" >none</a>
 						<a href="#" onclick="grayscale()"  >GrayScale</a>
@@ -41,13 +33,14 @@
 						<a href="#" onclick="hueRotate2()">Hue-Rotate2</a>
 						<a href="#" onclick="hueRotate3()">Hue-Rotate3</a>
 						<a href="#" onclick="saturate()">Saturate</a>
-						<a href="#" onclick="invert()">Invert</a>
+						<a href="#" onclick="invert()">Invert</a>						
 					</div>				
-			</div>				
-		</div>
-		</section>		
-			<button class="button" onclick="snap();">Snap</button>			
+			</div>					
+		</div>			
+			<button class="button" onclick="snap();">Snap</button>	
+			<a class="button" id="downloadLnk" download="pic.jpg">Download</a>			
+		<div style="clear: both;"></div>		
+		<p class="footer">XuanDuong kelly13493@gmail.com</p>		
 		<script src="sixthTry.js"> </script>
 	</body>
-	
 </html>

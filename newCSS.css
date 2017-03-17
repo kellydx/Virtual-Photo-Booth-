@@ -1,0 +1,208 @@
+body{
+	background-image:url("6.jpg");
+}
+.title{
+ font-family:  'Hoefler Text', Georgia, 'Times New Roman', serif;
+ font-weight: normal;
+ font-size: 1.75em;
+ letter-spacing: .2em;
+ line-height: 1.1em;
+ margin:0px auto;
+ text-align: center;
+ text-transform: uppercase;
+ color:white;
+}
+
+.introduction{
+ font-family:  'Hoefler Text', Georgia, 'Times New Roman', serif;
+ font-weight: normal; 
+ letter-spacing: .2em;
+ line-height: 1.1em;
+ margin:30px;  
+ text-align: center; 
+ color:white;
+}
+
+.footer{ 
+       position: fixed;     
+       text-align: center;    
+       bottom: 0px; 
+       width: 100%;
+	   color:white;
+}
+.canvases{
+	display: table; 
+	margin:0px auto;
+}
+
+.button {
+	position: relative;
+	left:600px;
+	background-color: #A9A9A9;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border-radius: 25px;	
+	-webkit-animation: glowing 1500ms infinite;
+	-moz-animation: glowing 1500ms infinite;
+	-o-animation: glowing 1500ms infinite;
+	animation: glowing 1500ms infinite;  
+}
+
+.dropbtn {
+	position: relative;
+	left:598px;
+    background-color: #A9A9A9;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border-radius: 25px;    
+	-webkit-animation: glowing 1500ms infinite;
+	-moz-animation: glowing 1500ms infinite;
+	-o-animation: glowing 1500ms infinite;
+	animation: glowing 1500ms infinite;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #3e8e41;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+	left: 598px;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #c6c6c6}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+/*filters*/
+.none{
+	filter:"";
+}
+
+.grayscale{
+    -webkit-filter:grayscale(1);
+    -moz-filter:grayscale(1);
+    -o-filter:grayscale(1);
+    -ms-filter:grayscale(1);
+    filter:grayscale(1);
+}
+
+.sepia{
+    -webkit-filter:sepia(0.8);
+    -moz-filter:sepia(0.8);
+    -o-filter:sepia(0.8);
+    -ms-filter:sepia(0.8);
+    filter:sepia(0.8);
+}
+
+.blur{
+    -webkit-filter:blur(3px);
+    -moz-filter:blur(3px);
+    -o-filter:blur(3px);
+    -ms-filter:blur(3px);
+    filter:blur(3px);
+}
+
+.brightness{
+    -webkit-filter:brightness(0.3);
+    -moz-filter:brightness(0.3);
+    -o-filter:brightness(0.3);
+    -ms-filter:brightness(0.3);
+    filter:brightness(0.3);
+}
+
+.contrast{
+    -webkit-filter:contrast(0.5);
+    -moz-filter:contrast(0.5);
+    -o-filter:contrast(0.5);
+    -ms-filter:contrast(0.5);
+    filter:contrast(0.5);
+}
+
+.huerotate{
+    -webkit-filter:hue-rotate(90deg);
+    -moz-filter:hue-rotate(90deg);
+    -o-filter:hue-rotate(90deg);
+    -ms-filter:hue-rotate(90deg);
+    filter:hue-rotate(90deg);
+}
+
+.huerotate2{
+    -webkit-filter:hue-rotate(180deg);
+    -moz-filter:hue-rotate(180deg);
+    -o-filter:hue-rotate(180deg);
+    -ms-filter:hue-rotate(180deg);
+    filter:hue-rotate(180deg);
+}
+
+.huerotate3{
+    -webkit-filter:hue-rotate(270deg);
+    -moz-filter:hue-rotate(270deg);
+    -o-filter:hue-rotate(270deg);
+    -ms-filter:hue-rotate(270deg);
+    filter:hue-rotate(270deg);
+}
+
+.saturate{
+    -webkit-filter:saturate(10);
+    -moz-filter:saturate(10);
+    -o-filter:saturate(10);
+    -ms-filter:saturate(10);
+    filter:saturate(10);
+}
+
+.invert{
+    -webkit-filter:invert(1);
+    -moz-filter:invert(1);
+    -o-filter: invert(1);
+    -ms-filter: invert(1);
+    filter: invert(1);
+}
+@-webkit-keyframes glowing {
+  0% { background-color: #B20000; -webkit-box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #C0C0C0; -webkit-box-shadow: 0 0 40px #C0C0C0; }
+  100% { background-color: #C0C0C0; -webkit-box-shadow: 0 0 3px #C0C0C0; }
+}
+
+@-moz-keyframes glowing {
+  0% { background-color: #B20000; -moz-box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #C0C0C0; -moz-box-shadow: 0 0 40px #C0C0C0; }
+  100% { background-color: #C0C0C0; -moz-box-shadow: 0 0 3px #C0C0C0; }
+}
+
+@-o-keyframes glowing {
+  0% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #FF0000; box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+}
+
+@keyframes glowing {
+  0% { background-color: #C0C0C0; box-shadow: 0 0 3px #C0C0C0; }
+  50% { background-color: #C0C0C0; box-shadow: 0 0 40px #C0C0C0; }
+  100% { background-color:#C0C0C0; box-shadow: 0 0 3px #C0C0C0; }
+}
